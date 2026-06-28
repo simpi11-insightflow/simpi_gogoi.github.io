@@ -1,1 +1,0 @@
-# simpi_gogoi.github.io
