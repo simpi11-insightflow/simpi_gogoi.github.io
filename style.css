@@ -1,0 +1,295 @@
+/* Custom Font Integration (Quicksand) */
+@font-face {
+    font-family: 'Quicksand';
+    src: url('Quicksand-VariableFont_wght.ttf') format('truetype');
+    font-weight: 300 700;
+}
+
+/* 🎀 Cute Theme Variables (Light Mode) */
+:root {
+    --bg-color: #faf7ff;      
+    --text-main: #1a1a1a;
+    --text-muted: #6a6a6a;
+    --accent: #ff99cc;        
+    --accent-hover: #ff77bb;  
+    --card-bg: #fff;
+    --card-shadow: rgba(220, 190, 240, 0.2); 
+    --border-color: #f1e6ff;
+    --toggle-bg: #f1e6ff;
+    --bubbly-radius: 22px;    
+    --tag-bg: #fff;
+    --tag-color: #ff99cc;
+    --transition: all 0.3s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+/* 🌙 Cozy Dark Mode Variables */
+.dark-theme {
+    --bg-color: #12101a;      
+    --text-main: #f9f9ff;
+    --text-muted: #9ca3af;
+    --accent: #f0c3f0;        
+    --accent-hover: #ff99cc;  
+    --card-bg: #1e1b29;
+    --card-shadow: rgba(0, 0, 0, 0.4);
+    --border-color: #2e2a3d;
+    --toggle-bg: #2e2a3d;
+    --tag-bg: #2e2a3d;
+    --tag-color: #f0c3f0;
+}
+
+body {
+    font-family: 'Quicksand', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    padding-top: 90px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- Bootstrap Navbar Overrides --- */
+.main-nav {
+    background-color: var(--bg-color) !important;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    transition: var(--transition);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main) !important;
+}
+
+.logo .heart-icon {
+    color: var(--accent);
+    margin-left: 3px;
+}
+
+.nav-links .nav-link {
+    color: var(--text-muted) !important;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1rem !important;
+    border-radius: 20px;
+    transition: var(--transition);
+}
+
+.nav-links .nav-link:hover {
+    color: var(--accent) !important;
+    background-color: var(--border-color);
+}
+
+/* Hamburger Icon Custom Styling */
+.custom-toggler {
+    border: 2px solid var(--border-color) !important;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+}
+
+.custom-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(255, 153, 204, 0.25);
+}
+
+/* Bubbly Dark Mode Button */
+.theme-toggle-btn {
+    background: var(--toggle-bg);
+    border: none;
+    color: var(--accent);
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    width: 42px;
+    height: 42px;
+    transition: var(--transition);
+}
+
+.theme-toggle-btn:hover {
+    transform: rotate(15deg) scale(1.08);
+}
+
+/* --- Section Structural Layouts --- */
+section {
+    padding: 5rem 0;
+}
+
+.section-header h2 {
+    font-weight: 700;
+}
+
+.section-header .icon {
+    color: var(--accent);
+}
+
+.doodle-line {
+    width: 60px;
+    height: 5px;
+    background-color: var(--accent);
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+/* --- Hero Layout Modifiers --- */
+.hero-section {
+    min-height: 75vh;
+}
+
+.header-doodle {
+    color: var(--accent);
+    font-size: 1.5rem;
+}
+
+.hero-content .highlight {
+    color: var(--accent);
+    position: relative;
+    display: inline-block;
+}
+
+.hero-content .highlight::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 5px;
+    left: 0;
+    background-color: var(--accent);
+    border-radius: 2px;
+}
+
+/* --- Cute UI Component Styling --- */
+.btn {
+    padding: 0.8rem 2rem !important;
+    font-weight: 600 !important;
+    border-radius: 30px !important;
+    transition: var(--transition) !important;
+}
+
+.primary-btn {
+    background-color: var(--accent) !important;
+    color: var(--bg-color) !important;
+    border: none !important;
+    box-shadow: 0 4px 15px var(--card-shadow);
+}
+
+.primary-btn:hover {
+    background-color: var(--accent-hover) !important;
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    background-color: var(--card-bg) !important;
+    color: var(--text-main) !important;
+    border: 2px solid var(--border-color) !important;
+}
+
+.secondary-btn:hover {
+    background-color: var(--border-color) !important;
+    transform: translateY(-3px);
+}
+
+/* Skills Container Layout */
+.skills-box {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--bubbly-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 5px 20px var(--card-shadow);
+}
+
+.cute-tag {
+    background: var(--tag-bg);
+    color: var(--tag-color);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+/* Bubbly Project Cards Grid Elements */
+.project-card.bubbly {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--bubbly-radius);
+    padding: 2.2rem;
+    box-shadow: 0 5px 15px var(--card-shadow);
+    transition: var(--transition);
+}
+
+.project-card.bubbly:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px var(--card-shadow);
+    border-color: var(--accent);
+}
+
+.project-card h3 {
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.tag-pill {
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    color: var(--accent) !important;
+    background-color: var(--border-color) !important;
+    padding: 0.4rem 0.8rem !important;
+}
+
+.project-link {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+/* Contact Button Grouping */
+.max-w-500 {
+    max-width: 500px;
+}
+
+.contact-btn {
+    text-decoration: none;
+    color: var(--text-main);
+    background-color: var(--card-bg);
+    border: 2px solid var(--border-color);
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: var(--transition);
+    box-shadow: 0 4px 10px var(--card-shadow);
+}
+
+.contact-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-3px);
+}
+
+footer {
+    padding: 2.5rem 0;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Mobile Dropdown Layout Optimizations */
+@media (max-width: 767.98px) {
+    body { padding-top: 80px; }
+    .navbar-collapse {
+        background-color: var(--card-bg);
+        border-radius: 16px;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        box-shadow: 0 10px 25px var(--card-shadow);
+        border: 1px solid var(--border-color);
+    }
+    .nav-links .nav-link {
+        padding: 0.75rem 1rem !important;
+    }
+}

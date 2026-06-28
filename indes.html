@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, I'm Simpi Gogoi | Portfolio ✨</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Boxicons for theme symbols -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom Cute Styles Overrides -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+
+    <!-- Bubbly Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top main-nav">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">Simpi Gogoi <span class="heart-icon">♥</span></a>
+            
+            <div class="d-flex align-items-center order-md-last gap-2">
+                <!-- Cute Dark Mode Toggle -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle cute dark mode">
+                    <i class='bx bx-star' id="toggle-icon"></i>
+                </button>
+                
+                <!-- Bootstrap Hamburger Button for Mobile Phones -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav" aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Navbar Drawer Links Container -->
+            <div class="collapse navbar-collapse" id="portfolioNav">
+                <ul class="navbar-nav ms-auto nav-links align-items-md-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Fav Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Warm Hero Section -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-8 hero-content">
+                    <div class="header-doodle">✦ ✦ ✦</div>
+                    <h1 class="display-3 fw-bold">Hello, I'm <span class="highlight">Simpi Gogoi</span>.</h1>
+                    <h2 class="h2 fw-medium mt-3">Passionate Engineer & Problem Solver ✨</h2>
+                    <p class="fs-5 mt-4">I'm a curious engineer fascinated by solving tricky puzzles and making digital spaces beautiful.</p>
+                    <div class="hero-cta d-flex flex-wrap gap-3 mt-4">
+                        <a href="#projects" class="btn primary-btn">Peek At My Work</a>
+                        <a href="#contact" class="btn secondary-btn">Say Hi!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gentle About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="icon">✨</span> About Me</h2>
+                <div class="doodle-line"></div>
+            </div>
+            
+            <div class="row g-5 align-items-start mt-1">
+                <div class="col-12 col-md-7 about-text">
+                    <p class="fs-5">Hello! I am a final-year engineering student focused on creating efficient, real-world solutions. I thrive at the intersection or crafting seamless interfaces, my goal is always to make something impactful and intuitive.</p>
+                    <p class="fs-5">I thrive on turning creative ideas into working realities. Let's make something amazing together!</p>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="skills-box">
+                        <h3 class="h5 fw-bold mb-4">My Superpowers</h3>
+                        <div class="skills-tags d-flex flex-wrap gap-2">
+                            <span class="tag cute-tag">Python</span>
+                            <span class="tag cute-tag">SQL</span>
+                            <span class="tag cute-tag">Git</span>
+                            <span class="tag cute-tag">Power Bi</span>
+                            <span class="tag cute-tag">Data Magic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playful Projects Grid Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="icon">🚀</span> Favourite Projects</h2>
+                <div class="doodle-line"></div>
+            </div>
+            
+            <div class="row g-4 mt-1">
+                <!-- Project Card 1 -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="project-card bubbly h-100 d-flex flex-column justify-content-between">
+                        <div class="project-info">
+                            <h3>Predictive Maintenance Analysis using Machine Learning <span class="cute-icon">🐈</span></h3>
+                            <p class="mt-3"> This project develops an end-to-end Predictive Maintenance and Industrial Anomaly Detection System using the 3W Oil & Gas Dataset..</p>
+                            <div class="project-tags d-flex flex-wrap gap-2 my-4">
+                                <span class="badge rounded-pill tag-pill">Python</span> 
+                                <span class="badge rounded-pill tag-pill">SQL</span>
+				<span class="badge rounded-pill tag-pill">Machine Learning</span>
+				<span class="badge rounded-pill tag-pill">Power Bi</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/Project-Our-s/Predictive-Maintenance-Analysis-in-Petroleum-using-ML" class="project-link mt-auto" target="_blank">Repository ✨</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="project-card bubbly h-100 d-flex flex-column justify-content-between">
+                        <div class="project-info">
+                            <h3>Customer Churn Prediction & Retention <span class="cute-icon">🎨</span></h3>
+                            <p class="mt-3">This cute project was about automation. Check out the impact!</p>
+                            <div class="project-tags d-flex flex-wrap gap-2 my-4">
+                                <span class="badge rounded-pill tag-pill">Python</span> 
+                                <span class="badge rounded-pill tag-pill">SQL</span>
+				<span class="badge rounded-pill tag-pill">Machine Learning</span>
+				<span class="badge rounded-pill tag-pill">Power Bi</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/simpi11-insightflow/customer-churn-prediction-powerbi" class="project-link mt-auto" target="_blank">Repository 🎉</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sweet Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container text-center">
+            <div class="section-header d-flex flex-column align-items-center">
+                <h2><span class="icon"></span> Get In Touch</h2>
+                <div class="doodle-line"></div>
+            </div>
+            <p class="fs-5 mx-auto mt-4 max-w-500">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open!</p>
+            
+            <div class="contact-links d-flex justify-content-center flex-wrap gap-3 mt-5">
+                <a href="mailto:simpigogoi11@gmail.com" class="contact-btn"><i class='bx bx-envelope'></i> Email Me</a>
+                <a href="https://github.com/simpi11-insightflow" target="_blank" class="contact-btn"><i class='bx bxl-github' ></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/simpi-gogoi-761399302/" target="_blank" class="contact-btn"><i class='bx bxl-linkedin' ></i> LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sweet Footer -->
+    <footer class="mt-5 text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Simpi Gogoi. Made with sweet thoughts.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS CDN (Includes Popper for collapses/drawers) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link to the logic controller -->
+    <script src="script.js"></script>
+</body>
+</html>
